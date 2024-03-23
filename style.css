@@ -50,7 +50,6 @@ header p{
     color: #42D3FF;
 }
 form{
-    height: 1566px;
     background: #FAFAFC;
     margin-top: 38px;
     border-radius: 8px 8px 0 0;
@@ -139,6 +138,13 @@ fieldset legend{
     background-repeat: no-repeat;
     background-position: right 24px top 50%;
 }
+
+/* Essa pseudo-classe é útil para usuário identificar quais campos foram preenchidos incorretamente. */
+input:invalid{
+    border: 2px solid #FF1010;
+}
+
+
 .col-3{
     display: flex;
     gap: 20px;
@@ -184,3 +190,37 @@ fieldset legend{
 .checkbox-wrapper input:focus + label::before {
     outline: 2px solid black;
 }
+
+footer{
+    background: #f0f0f4;
+
+    height: 136px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px 64px;
+
+    margin-bottom: 100px;
+    border-top: 1px solid #d6d6d6;
+    border-radius: 0 0 8px 8px;
+}
+
+footer .button{
+    height: 56px;
+
+    background: #04d361;
+    border: 0;
+    border-radius: 8px;
+
+    font-family: "Archivo", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+}
+
+footer .button:hover{
+    background: #048e42;
+    box-shadow: -1px 0px 20px 3px #048e42;
+}    
